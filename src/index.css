@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import "tailwindcss";
+
+:root{
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.landing{
+    background: url('/src/assets/bg.avif');
+    background-position: center;
+    background-size: auto;
+}
+
+.logo-title{
+    @apply  text-3xl font-thin text-center lg:mt-0 font-sans
+}
+
+.logo-span{
+    @apply text-red-500/70 font-display font-semibold text-3xl lg:text-4xl
+}
+
+.nav-item{
+    @apply text-3xl text-center hover:cursor-pointer hover:text-red-500/70 transition-all duration-500 relative
+}
+
+.mobile-nav-item{
+    @apply text-2xl text-center uppercase hover:cursor-pointer hover:text-red-500/70 transition-all duration-300
+}
+
+.search-input{
+    @apply border border-white rounded-2xl px-3 py-2 text-center focus:border-red-600 focus:outline-none focus:ring-0
+}
+
+.page-btn{
+    @apply text-2xl bg-black w-[2rem] h-[2rem] rounded-full hover:text-red-600 transition-all duration-600 cursor-pointer
+}
+
+.sub-menu{
+    @apply  bg-black/95 text-2xl absolute p-10 flex flex-col justify-center items-center gap-5 rounded-br-2xl rounded-bl-2xl transition-all duration-300 cursor-pointer
+}
+
+.sub-menu-mobile{
+    @apply w-[90%] bg-black/95 text-2xl absolute p-10 flex flex-col justify-center items-center gap-5 rounded-br-2xl rounded-bl-2xl transition-all duration-600 cursor-pointer
+}
+
+.menu-link{
+    @apply hover:text-red-600 transition-all duration-300 cursor-pointer
+}
+
+
+@theme{
+    --font-display: 'Satisfy', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
