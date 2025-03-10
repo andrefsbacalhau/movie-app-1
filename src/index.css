@@ -46,7 +46,7 @@
 }
 
 .sub-menu-mobile{
-    @apply w-[90%] bg-black/95 text-2xl absolute p-10 flex flex-col justify-center items-center gap-5 rounded-br-2xl rounded-bl-2xl transition-all duration-600 cursor-pointer
+    @apply w-full bg-black/95 text-2xl absolute left-0 p-10 flex flex-col justify-center items-center gap-5 rounded-br-2xl rounded-bl-2xl transition-all duration-600 cursor-pointer
 }
 
 .menu-link{
